@@ -54,7 +54,7 @@ export default function Login() {
 
       localStorage.setItem('userinfo', JSON.stringify(data));
       setLoading(false);
-     onsole.log("Before navigate");
+      console.log("Before navigate");
       navigate('/chat');
       console.log("After navigate");
     } catch (err) {
