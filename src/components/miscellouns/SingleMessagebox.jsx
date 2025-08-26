@@ -47,7 +47,7 @@ export default function SingleMessagebox({ selectchat }) {
     try {
       setloading(true);
       const { data } = await axios.post(
-        `http://localhost:5000/api/message`,
+        `${BaseUrl}/api/message`,
         {
           content: message,
           chatid: selectchat._id,
